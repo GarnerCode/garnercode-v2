@@ -2,7 +2,7 @@
     <section id="landing">
         <h1>Hi, I'm <span class="text-highlight">Tyler</span></h1>
         <p>I work with Vue to develop complex user-interfaces and web applications.</p>
-        <button class="button-primary">Contact</button>
+        <a href="#contact" class="button button-primary">Contact</a>
     </section>
 </template>
 
@@ -23,7 +23,7 @@
                 transform: translateY(1rem);
                 animation: fadeInUp 0.5s ease 0.75s forwards;
             }
-            p, button {
+            p, a {
                 opacity: 0;
                 animation: fadeIn 0.5s ease 1.5s forwards;
             }
