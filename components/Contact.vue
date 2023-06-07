@@ -6,22 +6,22 @@
                 <div class="label-container">
                     <label for="name">Name</label>
                 </div>
-                <input type="text" name="name">
+                <input v-model="formData.name" type="text" name="name">
             </div>
             <div class="field">
                 <div class="label-container">
                     <label for="email">Email</label>
                 </div>
-                <input type="email" name="email">
+                <input v-model="formData.email" type="email" name="email">
             </div>
             <div class="field">
                 <div class="label-container">
                     <label for="name">Message</label>
                 </div>
-                <textarea name="message"></textarea>
+                <textarea v-model="formData.message" name="message"></textarea>
             </div>
             <div class="field">
-                <button class="button-primary">Submit</button>
+                <button :disabled="submitDisabled" class="button-primary">Submit</button>
             </div>
         </form>
     </section>
@@ -66,6 +66,16 @@
                 }
                 button {
                     margin: 0 auto;
+                    &:disabled {
+                        color: var(--color-black);
+                        border: 1px solid var(--color-black);
+                        cursor: default;
+                        &:hover {
+                            background: none;
+                            transform: translateY(0);
+                            box-shadow: none;
+                        }
+                    }
                 }
             }
         }
@@ -79,3 +89,37 @@
         }
     }
 </style>
+
+<script lang="ts">
+    import { defineComponent } from 'vue';
+
+    export default defineComponent({
+        name: 'Contact',
+        data: () => {
+            return {
+                formData: {
+                    name: '',
+                    email: '',
+                    message: '',
+                },
+                submitDisabled: true,
+            }
+        },
+        watch: {
+            'formData': {
+                handler: function(val) {
+                    if (val) {
+                        if (this.formData.name !== '' && 
+                        this.formData.email !== '' && 
+                        this.formData.message !== '') {
+                            this.submitDisabled = false;
+                        } else {
+                            this.submitDisabled = true;
+                        }
+                    }
+                },
+                deep: true,
+            }
+        }
+    })
+</script>
