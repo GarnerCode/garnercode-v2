@@ -5,7 +5,7 @@
             <img class="headshot" src="images/headshot.webp" alt="Tyler Garner headshot">
             <div class="about-paragraphs">
                 <p>My name is Tyler Garner. I am a front-end web developer that specializes in Vue. With over 5 years of web development experience, I am proficient in developing complex user-interfaces and web applications.</p>
-                <p>I am always eager for new challenges and opportunities to demonstrate my coding skills and learn new technologies! Currently, I am learning Express.js and MongoDB to become a full-stack web developer.</p>
+                <p>As my focus is in front-end, I utilize the open-source service Supabase when back-end code and databases are necessary in order to develop full-stack websites and applications.</p>
                 <p>When I'm not coding, you can find me writing campaigns for Dungeons & Dragons, or staying active with paintball.</p>
             </div>
         </div>

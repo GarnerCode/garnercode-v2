@@ -1,5 +1,16 @@
 export const projects = [
     {
+        title: 'Invoicer (Under Development)',
+        imageUrl: 'images/invoicer.webp',
+        liveUrl: 'https://invoicer-blue.vercel.app/',
+        gitUrl: 'https://github.com/GarnerCode/invoicer',
+        description: 'Invoicing application being built using Vue and Supabase.',
+        tech: [
+            'Vue',
+            'Supabase'
+        ]
+    },
+    {
         title: 'DungeoNex',
         imageUrl: 'images/dungeonex.webp',
         liveUrl: 'https://dungeonex.vercel.app/login',
