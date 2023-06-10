@@ -6,7 +6,9 @@ export const projects = [
         gitUrl: 'https://github.com/GarnerCode/invoicer',
         description: 'Invoicing application being built using Vue and Supabase.',
         tech: [
+            'TypeScript',
             'Vue',
+            'Sass',
             'Supabase'
         ]
     },
@@ -17,7 +19,9 @@ export const projects = [
         gitUrl: 'https://github.com/GarnerCode/dungeonex',
         description: 'Dungeons & Dragons campaign management tool allowing users to create, edit, and delete campaigns, characters, and combat encounters.',
         tech: [
+            'TypeScript',
             'Vue',
+            'Sass',
             'Supabase',
         ]
     },
@@ -28,7 +32,9 @@ export const projects = [
         gitUrl: 'https://github.com/GarnerCode/audiophile',
         description: 'E-commerce website offering audio electronics, complete with cart functionality and persisting state between sessions.',
         tech: [
+            'TypeScript',
             'Nuxt',
+            'Sass',
         ]
     },
     {
@@ -38,7 +44,9 @@ export const projects = [
         gitUrl: 'https://github.com/GarnerCode/arch',
         description: 'Static website for an architecture firm.',
         tech: [
+            'TypeScript',
             'Nuxt',
+            'Sass',
         ]
     },
 ]
