@@ -1,10 +1,10 @@
 export const projects = [
     {
-        title: 'Invoicer (Under Development)',
+        title: 'Invoicer',
         imageUrl: 'images/invoicer.webp',
         liveUrl: 'https://invoicer-blue.vercel.app/',
         gitUrl: 'https://github.com/GarnerCode/invoicer',
-        description: 'Invoicing application being built using Vue and Supabase.',
+        description: 'Invoicing application allowing creation, editing, and managing of invoices.',
         tech: [
             'TypeScript',
             'Vue',

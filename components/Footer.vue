@@ -32,6 +32,7 @@
                 font-size: 1.5rem;
                 text-align: center;
                 color: var(--color-white);
+                font-family: var(--font-family-primary);
             }
             .nav-list {
                 list-style: none;
