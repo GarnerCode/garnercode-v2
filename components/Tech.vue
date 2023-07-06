@@ -15,7 +15,7 @@
                     <p class="date">2022 - 2023</p>
                     <div class="details">
                         <p class="title">Junior Front-End Developer</p>
-                        <p class="company">Runway Proptech</p>
+                        <a class="company" href="https://www.runwayproptech.com/" target="_blank">Runway Proptech</a>
                         <p class="summary">Worked alongside UI designer and QA team to develop and debug client applications and consumer-facing websites for multiple corporations including Howard Hughes and Disney.</p>
                         <ul class="tech-list">
                             <li>TypeScript</li>
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="button-container">
-                <a href="https://drive.google.com/file/d/1-uQ3ispSgLHtcgwtASVoP-wAK7-6hzAr/view?usp=sharing" target="_blank" class="button button-primary">View Resume</a>
+                <a href="https://drive.google.com/file/d/139KydJAvsLkpU2kU7fc9Nb8spMbqozbb/view?usp=sharing" target="_blank" class="button button-primary">View Resume</a>
             </div>
         </div>
     </section>
@@ -85,6 +85,12 @@
                 }
                 .company {
                     margin-bottom: 1rem;
+                    font-size: 1.25rem;
+                    line-height: 2rem;
+                    transition: var(--transition);
+                    &:hover {
+                        color: var(--color-primary);
+                    }
                 }
                 .summary {
                     font-size: 1rem;
